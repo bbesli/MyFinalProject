@@ -15,6 +15,10 @@ namespace Core.Utilities.Results
         {
 
         }
+
+
+
+        /*bunlar çok kullanılmıyormuş*/
         public SuccessDataResult(string message):base(default,true,message)
         {
 

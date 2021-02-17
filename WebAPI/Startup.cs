@@ -32,8 +32,10 @@ namespace WebAPI
             //Autofac, Ninject, CastleWindsor, StructureMap, LightInject, DryInject ---> IoC Container
             // Biz AOP yapacaðýz. Aspect Orianted Programing. Dolayýsýyla yukarýdakilerden birini kullanacaðýz.
             services.AddControllers();
-            services.AddSingleton<IProductService, ProductManager>();
-            services.AddSingleton<IProductDal, EfProductDal>();
+            //services.AddSingleton<IProductService, ProductManager>();
+            //services.AddSingleton<IProductDal, EfProductDal>();
+
+
             
             //içinde data tutmuyorsak singleton yapabiliriz. Örn: bir eticaret sitesinde sepet i singleton yaparsak
             //herkesin sepeti birbirine girer 

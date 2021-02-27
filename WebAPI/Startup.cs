@@ -1,5 +1,6 @@
 using Business.Abstract;
 using Business.Concrete;
+using Core.Utilities.IoC;
 using Core.Utilities.Security.Encryption;
 using Core.Utilities.Security.JWT;
 using DataAccess.Abstract;
@@ -58,7 +59,7 @@ namespace WebAPI
                     };
                 });
 
-
+            ServiceTool.Create(services);
 
             /*içinde data tutmuyorsak singleton yapabiliriz. Örn: bir eticaret sitesinde sepet i singleton yaparsak
             herkesin sepeti birbirine girer */

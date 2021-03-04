@@ -85,10 +85,10 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetProductDetails());
         }
-        //public IResult AddTransactionalTest(Product product)
-        //{
+        public IResult AddTransactionalTest(Product product)
+        {
 
-        //}
+        }
 
         private IResult CheckIfProductCountOfCategoryCorrect(int categoryId)
         {
